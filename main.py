@@ -9,5 +9,10 @@ count = sum(
     numbers[i] > numbers[i - 1]
     for i in range(1, len(numbers))
 ) 
+count2 = sum(
+    numbers[i] > numbers[i - 3 ]
+    for i in range(3, len(numbers))
+) 
         
 print(f"count: {count}")
+print(f"part 2: {count2}")
