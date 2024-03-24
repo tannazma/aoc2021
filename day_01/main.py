@@ -5,7 +5,7 @@ with open("inputs.txt", "r") as file:
     input_s = file.read()
 numbers = [int(line) for line in input_s.splitlines()]
 
-count = sum(
+count = sum(  
     numbers[i] > numbers[i - 1]
     for i in range(1, len(numbers))
 ) 
