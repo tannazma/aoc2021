@@ -15,3 +15,20 @@ for xInData in numbers:
         y -= int(xInData[1])
         
 print(xInData, xInData[1], x, y, x*y)
+
+
+x = 0
+y = 0
+aim = 0  
+
+for xInData in numbers:
+    xInData = xInData.split()
+    if xInData[0] == "forward":
+        x += int(xInData[1])
+        y += (aim * int(xInData[1]))
+    elif xInData[0]== "down":
+        aim += int(xInData[1])
+    else :
+        aim -= int(xInData[1])
+
+print(xInData, xInData[1], x, y, x*y)
